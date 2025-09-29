@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>313plug - Nos Photos</title>
+      <link rel="stylesheet" href="CSS/styles.css">
+   </head>
+   <body>
+          <nav class="main-nav">
+            <!-- Logo toujours visible -->
+            <div class="logo">
+               <a href="index.html">
+                  <img src="images/313_logo_Lamauve-removebg-preview.png" alt="logo du groupe">
+               </a>
+            </div>
+   
+            <!-- Navbar en liens (cachée sur mobile) -->
+            <ul class="nav-links hideOnMobile">
+               <li><a href="musique.html">Musique</a></li>
+               <li><a href="#">À propos</a></li>
+               <li><a href="réseau.html">Nos Réseaux</a></li>
+            </ul>
+   
+            <!-- Icône de menu pour la sidebar (visible uniquement sur mobile) -->
+            <div class="menu-button" onclick="showsidebar()">
+               <svg xmlns="http://www.w3.org/2000/svg" height="28px" viewBox="0 -960 960 960" width="28px" fill="#000000">
+                  <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
+               </svg>
+            </div>
+         </nav>
+   
+         <!-- Sidebar (initialement cachée) -->
+         <aside class="sidebar" id="sidebar">
+            <ul>
+               <li onclick="hidesidebar()">
+                  <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="28px" viewBox="0 -960 960 960" width="28px" fill="#000000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a>
+               </li>
+               <li><a href="musique.html">Musique</a></li>
+               <li><a href="#">À propos</a></li>
+               <li><a href="réseau.html">Nos Réseaux</a></li>
+            </ul>
+         </aside>
+         <div class="pics">
+            <img class="images-propos" src="images/313 pics a propos .jpg">  
+               <div class="text-box">
+                  <h1>Qui sont la 313plug&nbsp;?</h1>
+                      <p>
+                     Le groupe 313plug est un collectif émergent dans le paysage du rap français, connu pour son approche créative et ses influences variées. 
+                      Originaire de la région parisienne, le trio se compose de Shade, Lamauve et Kody, cousins et amis. Ils ont décidé de fusionner leurs talents et leurs visions artistiques. 
+                     Leur nom, 313plug, fait référence à leur jour de naissance et symbolise également un papillon, une métaphore pour la nature éphémère mais transformatrice de leur musique.
+                     </p>
+               </div>
+         </div>
+         <div class="pics">
+            <img class="images-propos" src="images/Photo Shade-Kody.jpg">
+               <div class="text-box">
+                  <h2>Quelles sont leurs inspirations musicales&nbsp;?</h2>
+                     <p>
+                        Les membres du groupe puisent leur inspiration dans une palette musicale éclectique, allant du hip-hop à la dancehall, en passant par le R&amp;B et surtout l’underground français. 
+                        Cette richesse d'influences se ressent dans leurs productions, qui mêlent storytelling émotionnel et beats atmosphériques. Leur premier projet, <em>313.$HIT</em> (2024), a marqué le début de leur ascension, notamment grâce à leur son phare "TRAPSHIT". 
+                        Depuis, ils ont élargi leur audience avec des projets solo de 313shade, comme l'EP <em>SSW TAPE</em> en 2024, qui explore des thématiques personnelles et universelles à travers des sonorités captivantes et nouvelles.
+                      </p>
+               </div>
+         </div>
+         <div class="pics">
+            <img class="images-propos" src="images/Kody Flex in.jpg">
+               <div class="text-box">
+                  <h2>Une première scène remarquable&nbsp;!</h2>
+                     <p>
+                     Le collectif a également su s'imposer sur scène, notamment lors de leur premier showcase exceptionnel organisé par YamasEvent, où leur maîtrise de la scénographie a impressionné le public. 
+                     Leur ambition va au-delà de la musique&nbsp;: ils souhaitent créer une expérience immersive et significative pour leur public, tout en partageant des messages authentiques et universels.
+                     </p>  
+               </div>
+         </div>
+         <div class="pics">
+            <img class="images-propos" src="images/313 logo Lamauve.jpg">
+               <div class="text-box">
+                  <h2>Les ambitions de la 313plug</h2>
+                     <p>
+                     313plug continue de produire de la musique qualitative pour se créer un public de plus en plus large, avec ses collaborations et ses titres impactants. 
+                     La 313plug est bien déterminée à se faire une place parmi les étoiles montantes du rap.
+                     </p>
+               </div>
+         </div>
+         <script>
+            function showsidebar(){
+              const sidebar = document.querySelector('.sidebar');
+              sidebar.style.display = 'flex';
+             }
+           function hidesidebar(){
+              const sidebar = document.querySelector('.sidebar');
+              sidebar.style.display = 'none';
+             }
+          </script>
+   </body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>313plug - Site Officiel</title>
+   <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+   <section class="hautdepage">
+      <header class="header">
+         <div class="logo">
+            <a href="test.html" class="logo">
+               <img src="images/313_logo_Lamauve-removebg-preview.png" alt="logo du groupe">
+            </a>
+         </div>
+         <nav>
+            <ul class="main-nav">
+               <li><a href="musique.html" target="_blank">Musique</a></li>
+               <li><a href="photo.html" target="_blank">Nos Photos</a></li>
+               <li><a href="réseau.html" target="_blank">Nos R&eacute;seaux</a></li>
+               <li><a href="#" onclick="toggleSidebar()"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#000000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            </ul>
+         </nav>
+      </header>
+   </section>
+
+   <div class="sidebar" id="sidebar">
+      <ul>
+         <li><a href="musique.html">Musique</a></li>
+         <li><a href="photo.html">Nos Photos</a></li>
+         <li><a href="réseau.html">Nos R&eacute;seaux</a></li>
+         <li><a href="#" onclick="toggleSidebar()">Fermer</a></li>
+      </ul>
+   </div>
+
+   <center>
+      <p>313PLUG, un collectif d&rsquo;artistes passionn&eacute;s...</p>
+   </center>
+
+   <script>
+      function toggleSidebar() {
+         const sidebar = document.getElementById('sidebar');
+         sidebar.style.display = (sidebar.style.display === 'none' || sidebar.style.display === '') ? 'block' : 'none';
+      }
+   </script>
+</body>
+</html>

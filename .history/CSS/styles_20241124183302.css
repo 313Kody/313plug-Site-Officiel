@@ -1,0 +1,662 @@
+/* Styles globaux */
+:root{
+    --base-color: white;
+    --base-variant: #e8e9ed;
+    --text-color: black;
+}
+.darkmode{
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0 auto;
+    font-family: "Poppins", sans-serif;
+    background-color: var(--base-color);
+    color: var(--text-color);
+}
+
+.fugaz-one {
+    font-family: "Fugaz One", sans-serif;
+}
+/* background----------------------------------------------------------------- */
+
+.logo img {
+    width: 75px;
+    align-items: baseline;
+}
+
+/* Header / Navbar--------------------------------------------------------------- */
+.main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: white;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    width: 75px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links a {
+    font-size: 18px;
+    font-weight: 400;
+    color: black;
+    text-decoration: none;
+    padding: 0 15px;
+}
+
+.nav-links a:hover {
+    background-color: #f0f0f0;
+    border-radius: 4px;
+}
+
+/* Sidebar----------------------------------------------------------------------- */
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.626);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    width: 100%;
+}
+
+.sidebar a {
+    font-size: 18px;
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+.sidebar a:hover {
+    background-color: #e8e8e8;
+}
+
+/* Menu button sidebar */
+.menu-button {
+    display: none;
+}
+
+/* Responsive */
+@media(max-width: 800px) {
+    .hideOnMobile {
+        display: none;
+    }
+    .menu-button {
+        display: block;
+    }
+}
+@media(max-width: 400px) {
+    .sidebar {
+        width: 100%;
+    }
+}
+/* Landing page -------------------------------------------------------------- */
+
+section.hautdepage {
+    background: url('../images/TRAPSHIT COVER Banniere.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center ;
+    height: 80vh;
+}  
+
+.big-title {
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    padding: 20px 50px;
+    margin-top: 40px;
+}
+/* BOUTTON ------------------------------------------------------------------- */
+.button {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -150px;
+}
+
+.button-style {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 22px;
+    background: none;
+    border:3px solid #e8e8e8;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.button :active{
+    transition: scale(0.96);
+}
+
+/* Titre de Section----------------------------------------------------------- */
+.section-title{
+    font-size: 45px;
+    font-weight: 200;
+    margin-top: 25px;
+    position: relative;
+}
+
+/* section music home ---------------------------------------------------------*/
+
+.section-title {
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 30px;
+}
+
+.music{
+    background-color: var(--base-color);
+    height: 45vh;
+}
+/* Flex container */
+.cover-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin-left: 15px;
+}
+
+/* Images à gauche */
+.cover-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    max-width: 100%;
+}
+
+/* Image individuelle */
+.cover-box {
+    flex: 1;
+    max-width: 250px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.cover-box img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.cover-box:hover {
+    transform: scale(1.05);
+}
+
+/* Texte et bouton à droite */
+.text-container {
+    max-width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    justify-content: center;
+    gap: 20px;
+    color: #000000;
+    margin-right: 15px;
+}
+
+/* Texte */
+.text-music {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #000000;
+}
+
+.text-music h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+/* Bouton */
+.button-style2 {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    color: #000000;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.button-style2:hover {
+    background-color: #fddf5abb;
+    transform: translateY(-3px);
+}
+
+.button-style2:active {
+    transform: translateY(1px);
+}
+
+
+/* section réseau pour la homepage */
+
+.section-title2 {
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 35px;
+}
+
+.réseau{
+    background-color: var(--base-variant);
+    height: 100vh;
+}
+/* responsive pour la home page */
+
+@media (max-width: 1120px) {
+    .button-style{
+        padding: 12px 30px;
+        font-size: 20px;
+        margin-bottom: 145px;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Réduire la taille du texte du titre */
+    .section-title {
+        font-size: 28px;
+    }
+
+    /* Changer le comportement du conteneur .cover-flex */
+    .cover-flex {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    /* Modifier l'image de cover pour qu'elle soit plus petite sur les petits écrans */
+    .cover-box {
+        max-width: 100%;
+    }
+
+    /* Ajuster la taille du texte */
+    .text-music {
+        font-size: 14px;
+    }
+
+    .text-music h2 {
+        font-size: 20px;
+    }
+
+    /* Ajuster la largeur du texte et des boutons */
+    .text-container {
+        max-width: 90%; /* Plus large sur mobile */
+        margin-right: 0;
+    }
+
+    /* Boutons plus grands et espacés */
+    .button-style2 {
+        padding: 12px 24px;
+        font-size: 18px;
+    }
+
+    .button-style {
+        padding: 12px 30px;
+        font-size: 20px;
+        margin-top: 4px;
+    }
+
+    /* Empêcher que les éléments débordent */
+    .button {
+        height: auto;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 574px) {
+    .big-title{
+        font-size: 40px;
+    }
+}
+/* Lorsque l'écran est plus petit que 480px (taille mobile très petite) */
+@media (max-width: 480px) {
+    /* Réduire encore plus la taille du texte */
+    .section-title {
+        font-size: 24px;
+    }
+
+    .text-music {
+        font-size: 12px;
+    }
+
+    .text-music h2 {
+        font-size: 18px;
+    }
+
+    .button-style {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+
+    .big-title {
+        font-size: 30px;
+    }
+
+    /* Ajuster l'espace autour des éléments */
+    .cover-flex {
+        gap: 10px;
+    }
+
+    .cover-box {
+        max-width: 100%; /* Image en pleine largeur */
+    }
+
+    /* Mettre les textes et images en colonne */
+    .cover-images {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+    
+/* PAGES MUSIQUES : Styles pour la section Cover ------------------------------------*/
+
+/* Conteneur de chaque cover et texte */
+
+.titre-musique {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+}
+.cover-container1 {
+    max-width: 1600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    background-image: url("/images/313.SHIT\ COVER.jpg");
+    background-position:center;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 35px;
+    height: 45vh;
+}
+
+.cover-container2 {
+    max-width: 1600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    background-image: url("/images/STAMINA\ COVER.jpg");
+    background-position:center;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    background-color: rgba(0, 0, 0, 0.5); 
+    border-radius: 35px;
+    height: 45vh;
+}
+.cover-container3 {
+    max-width: 1600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    background-image: url("/images/BUISNESS\ COVER.jpg");
+    background-position:center;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    background-color: rgba(0, 0, 0, 0.5); 
+    border-radius: 35px;
+    height: 45vh;
+}
+.cover-container4 {
+    max-width: 1600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    background-image: url("/images/gelato.jpg");
+    background-position:center;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    background-color: rgba(0, 0, 0, 0.5); 
+    border-radius: 35px;
+    height: 45vh;
+}
+.cover-container5 {
+    max-width: 1600px;
+    display: flex;
+    float: left;
+    margin-right: 15px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    background-image: url("/images/SSW TAPE.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    background-color: rgba(0, 0, 0, 0.5); 
+    border-radius: 35px;
+    height: 45vh;
+}
+
+.glass {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 35px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%; 
+    padding: 0 20px;
+}
+/* Style pour chaque texte */
+.text-intro h1{
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 100px;
+    margin-top: 60px;
+}
+.text {
+    flex: 1;
+    padding: 10px;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    color: #ffffff;
+    text-align: left;
+    margin-right: 15px;
+}
+
+.text h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    color: #f1f1f1;
+    margin-bottom: 10px;
+}
+
+.text h3 {
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.text p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+
+/* Style pour l'image de cover */
+.cover-link {
+    flex: 1;
+    text-align: center;
+}
+
+.cover-image {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.cover-image:hover {
+    transform: scale(1.05);
+}
+
+/* Responsivité pour petits écrans */
+@media (max-width: 768px) {
+    .cover-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .cover-image {
+        max-width: 100%;
+    }
+}
+
+/* PAGES A PROPOS : images----------------------------------------------------------*/
+
+.pics {
+   position: relative;
+   width: 70%;
+   margin: 250px auto;
+}
+
+
+.images-propos {
+    max-width: 320px;
+    float: left;
+    border: 3px solid black;
+    border-radius: 10px;
+    margin-right: 15px;
+}
+
+.images-propos2 {
+    max-width: 320px;
+    float: right;
+    border: 3px solid black;
+    border-radius: 10px;
+    margin-left: 15px;
+}
+
+.text-box{
+    color: black;
+    font-weight: 600;
+}
+
+.text-box h1 {
+    font-family: "Fugaz One", sans-serif;
+    font-size: 42px;
+    font-weight: 500;
+}
+
+.text-box h2 {
+    font-family: "Fugaz One", sans-serif;
+    font-size: 42px;
+    font-weight: 500;
+}
+
+.text-box p {
+    font-size: 16px;
+}
+
+/* Animation d'apparition */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.pics {
+    animation: fadeIn 1s ease-in-out;
+}
+
+@media (max-width: 768px) {
+    .pics {
+        flex-direction: column; /* Passe en colonne sur mobile */
+        gap: 20px;
+    }
+    .images-propos, .images-propos2 {
+        float: none;
+        margin: 0 auto;
+    }
+    .text-box {
+        text-align: center; /* Centre le texte sur petit écran */
+    }
+}

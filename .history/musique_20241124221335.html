@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>313plug - Musique</title>
+   <link rel="stylesheet" href="CSS/styles.css">
+   <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+   <script type="text/javascript" src="darkmode.js" defer></script>
+</head>
+<body>
+   <nav class="main-nav">
+      <div class="logo">
+          <a href="index.html">
+              <img id="logo" src="images/313_vert-removebg-preview.png" alt="logo du groupe">
+          </a>
+      </div>
+  
+      <!-- Navbar en liens (cachée sur mobile) -->
+      <ul class="nav-links hideOnMobile">
+          <li><a href="musique.html" target="_blank">Musique</a></li>
+          <li><a href="propos.html" target="_blank">À propos</a></li>
+          <li><a href="réseau.html" target="_blank">Nos Réseaux</a></li>
+          <button id="theme-switch-navbar">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
+               <path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
+               <path d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z"/>
+            </svg>
+         </button>
+      </ul>
+  
+      <!-- Icône de menu pour la sidebar (visible uniquement sur mobile) -->
+      <div class="menu-button" onclick="showsidebar()">
+          <svg xmlns="http://www.w3.org/2000/svg" height="28px" viewBox="0 -960 960 960" width="28px" fill="#000000" id="menu-icon">
+              <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
+          </svg>
+      </div>
+  </nav>
+  
+  <!-- Sidebar (initialement cachée) -->
+  <aside class="sidebar" id="sidebar">
+      <ul>
+          <li onclick="hidesidebar()">
+              <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="28px" viewBox="0 -960 960 960" width="28px" fill="#000000" id="close-icon"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a>
+          </li>
+          <li><a href="musique.html" target="_blank">Musique</a></li>
+          <li><a href="propos.html" target="_blank">À propos</a></li>
+          <li><a href="réseau.html" target="_blank">Nos Réseaux</a></li>
+          <button id="theme-switch-sidebar">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
+               <path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
+               <path d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z"/>
+            </svg>
+         </button>
+      </ul>
+  </aside>
+  <script>
+      function showsidebar(){
+          const sidebar = document.querySelector('.sidebar');
+          sidebar.style.display = 'flex';
+      }
+      function hidesidebar(){
+          const sidebar = document.querySelector('.sidebar');
+          sidebar.style.display = 'none';
+      }
+   </script>
+   
+   <section class="titre-musique">
+      <div class="text-intro">
+         <h1>Les titres phares des artistes de la 313plug.</h1>
+     </div>
+      <!-- Premier projet 313.$HIT -->
+      <div class="cover-container1">
+         <div class="glass">
+            <div class="text">
+               <h2>313.$HIT : le premier projet</h2>
+               <p><strong>"313.$HIT"</strong>, premier projet du collectif 313plug, marque leurs débuts dans le rap avec des sonorités brutes et authentiques. Cet opus révèle leur univers musical unique, mêlant rythmes percutants et créativité audacieuse.</p>
+            </div>
+            <a href="https://linktr.ee/313.SHIT" target="_blank" class="cover-link">
+               <img src="images/313.SHIT COVER.jpg" alt="Cover 313.$HIT" class="cover-image">
+            </a>
+         </div>   
+      </div>
+   
+      <!-- Premier single "Stamina" -->
+      <div class="cover-container2">
+         <div class="glass">
+            <div class="text">
+               <h2>Stamina : premier single solo de 313shade</h2>
+               <p><strong>"Stamina"</strong>, premier single solo de <strong>313shade</strong>, marque un tournant dans sa carrière musicale. Ce titre, publié sur les plateformes de streaming, dévoile des sonorités atypiques qui reflètent son identité artistique unique. Une entrée en solo prometteuse qui annonce de grandes choses pour l'artiste.</p>
+            </div>
+            <a href="https://linktr.ee/Staminaby313shade" target="_blank" class="cover-link">
+               <img src="images/STAMINA COVER.jpg" alt="Cover Stamina" class="cover-image">
+            </a>
+         </div>
+      </div>
+   
+      <!-- Collaboration "Buisness" -->
+      <div class="cover-container3">
+         <div class="glass">
+            <div class="text">
+               <h3>Buisness : Une collaboration unique</h3>
+               <p><strong>"Buisness"</strong>, collaboration entre <strong>313shade</strong> et <strong>313LaMauve</strong>, explore les sonorités de l'amapiano, un style vibrant et dansant. Ce titre illustre leur grande versatilité musicale, s'aventurant hors des sentiers battus du rap classique. Une fusion réussie qui élargit les horizons de leur univers artistique.</p>
+            </div>
+            <a href="https://linktr.ee/BuisnessBy313shade" target="_blank" class="cover-link">
+               <img src="images/BUISNESS COVER.jpg" alt="Cover Buisness" class="cover-image">
+            </a>
+         </div>   
+      </div>
+   
+      <!-- Single "BABYMELO/GELATO" -->
+      <div class="cover-container4">
+         <div class="glass">
+            <div class="text">
+               <h2>BABYMELO/GELATO : Une étape clé</h2>
+               <p><strong>"BABYMELO/GELATO"</strong> illustre une étape clé dans l'évolution musicale de <strong>313shade</strong>, marquant une diversité artistique maîtrisée et pleinement assumée. Avec des sonorités innovantes et une aisance à jongler entre différents styles, ce titre témoigne d'une maturité artistique impressionnante. Une démonstration de créativité qui confirme son statut d'artiste à part dans le paysage musical actuel.</p>
+            </div>
+            <a href="https://linktr.ee/babymelogelato" target="_blank" class="cover-link">
+               <img src="images/gelato.jpg" alt="Cover Gelato" class="cover-image">
+            </a>
+         </div>
+      </div>
+   
+      <!-- Projet "SSW TAPE" -->
+      <div class="cover-container5">
+         <div class="glass">
+            <div class="text">
+               <h2>SSW TAPE - niveau supérieur</h2>
+               <p><strong>"SSW TAPE"</strong> de 313shade continue dans son style caractéristique, avec des productions sombres et des thèmes réalistes autour de la rue et de l'authenticité. Cet EP explore des histoires brutes et des réflexions sur la vie de quartier, tout en restant fidèle à son approche du rap trap.</p>
+               <p>Ce projet lui permet d’affirmer davantage son univers musical tout en attirant l’attention d’un public de plus en plus large dans le rap français.</p>
+            </div>
+            <a href="https://linktr.ee/313Kody" target="_blank" class="cover-link">
+               <img src="images/SSW TAPE.jpg" alt="Cover SSW TAPE" class="cover-image">
+            </a>
+         </div>
+      </div>
+   </section>
+</body>
+</html>
